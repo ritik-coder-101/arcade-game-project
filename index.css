@@ -12,6 +12,9 @@ body{
     
 }
 .navigationbar{
+    height: 50px;
+}
+.navigationbar{
     position: relative;
     background: black;
     overflow: hidden;
