@@ -11,20 +11,18 @@ body{
     flex-direction: column;
     
 }
-.navigationbar{
-    height: 50px;
-}
-.navigationbar{
+.navigationbar {
+    padding-top: 10px;
+    padding-bottom: 8px;
     position: relative;
     background: black;
     overflow: hidden;
-    justify-content: space-between;
     text-align: center;
     box-shadow: 10px 3px 10px rgba(0,0,0,0.8);
 }
 .navigationbar img[alt="image"] {
     position: absolute;
-    top: 5px;
+    top: 15px;
     left: 30px;
     transition: filter 0.7s ease;
 }
@@ -34,7 +32,7 @@ body{
 }
 .navigationbar img[alt="github"] {
     position: absolute;
-    top: 2px;
+    top: 12px;
     left: 1400px;
     transition: filter 0.7s ease;
 }
@@ -44,7 +42,7 @@ body{
 }
 .navigationbar img[alt="linkedin"]{
     position: absolute;
-    top: 2px;
+    top: 12px;
     left: 1480px;
     transition: filter 0.7s ease;
 }
@@ -76,7 +74,7 @@ body{
 }
 .search-box{
     position: absolute;
-    top: 1px;
+    top: 11px;
     left:1150px;
     padding: 5px;
     margin-top: 10px;
