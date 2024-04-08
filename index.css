@@ -92,3 +92,44 @@ input:hover{
     background-color: aliceblue;
     transform: scale(1.05);
 }
+.box-container{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.box{
+    margin-top: 10px;
+    background-color: antiquewhite;
+    border:2px solid black;
+    width:auto;
+    height: 80px;
+    /* display: none; */
+}
+.text1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: larger;
+    font-variant: small-caps;
+}
+.news {
+    padding-top: 20px;
+    display: flex;
+}
+
+.news-left,
+.news-right {
+    padding: 10px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-left img,
+.news-right img {
+    max-width: 100%;
+    max-height: 100%; 
+    width: auto;
+    height: auto;
+}
