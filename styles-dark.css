@@ -1,0 +1,110 @@
+body {
+    background-color: #333;
+    color: #f0f0f0;
+}
+.main{
+    padding-top: 68px;
+    display: flex;
+    flex-direction: column;  
+}
+.navigationbar {
+    padding-top: 10px;
+    padding-bottom: 8px;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    background: white;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 10px 3px 10px rgba(0,0,0,0.8);
+    z-index: 1000;
+}
+.navigationbar img[alt="image"] {
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    transition: filter 0.7s ease;
+}
+.navigationbar img[alt="image"]:hover{
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+.navigationbar img[alt="github"] {
+    position: absolute;
+    top: 12px;
+    left: 1400px;
+    transition: filter 0.7s ease;
+}
+.navigationbar img[alt="github"]:hover {
+    filter: brightness(1.9);
+    transform: scale(1.08);
+}
+.navigationbar img[alt="linkedin"]{
+    position: absolute;
+    top: 12px;
+    left: 1480px;
+    transition: filter 0.7s ease;
+}
+.navigationbar img[alt="linkedin"]:hover{
+    filter: brightness(1.9);
+    transform: scale(1.08);
+}
+.navigationbar ul{
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+}
+.navigationbar ul li {
+    display: inline-block;
+}
+.navigationbar ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    border-bottom: 4px solid transparent;
+}
+.navigationbar ul li a:hover{
+    transform: scale(1.08);
+    color: black;
+    border-bottom-color: black;
+}
+.navigationbar ul li:nth-child(3) a {
+    border-bottom: 5px solid black; /* Add border to Game Details */
+}
+
+.navigationbar ul li:nth-child(3) a:hover {
+    border-bottom: none; /* Remove border on hover */
+}
+.search-box{
+    position: absolute;
+    top: 11px;
+    left:1150px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 1px solid #333;
+    background-color: black;
+}
+.search-box:hover {
+    outline: none;
+    border-color: #555;
+}
+input{
+    border-radius: 15px;
+}
+input:hover{
+    background-color: aliceblue;
+    transform: scale(1.05);
+}
+.inner-div1,
+.inner-div2 {
+    flex: 1; /* Equal width */
+    padding: 20px; /* Add some spacing */
+    border: 1px solid black;
+     /* Add border for visibility */
+}
+
+

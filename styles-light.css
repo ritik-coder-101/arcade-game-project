@@ -1,0 +1,28 @@
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-gap: 10px;
+}
+
+.gallery img {
+    width: 90%;
+    height: 90%;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+.navigationbar ul li:nth-child(3) a {
+    border-bottom: 5px solid white; /* Add border to Game Details */
+}
+
+.navigationbar ul li:nth-child(3) a:hover {
+    border-bottom: none; /* Remove border on hover */
+}
