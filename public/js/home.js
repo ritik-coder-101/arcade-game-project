@@ -61,4 +61,3 @@ window.addEventListener('scroll', function() {
   background.style.top = scrollTop * 0.5 + 'px'; // Adjust the scroll speed by changing the multiplier
 });
 
- 
