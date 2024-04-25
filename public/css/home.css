@@ -242,7 +242,7 @@ body {
 }
 
 .game img:hover {
-    transform: translate(60%, 0px); /* Apply a translate effect on hover */
+    transform: translate(50%, 0px); /* Apply a translate effect on hover */
 }
 
 .play-button {
