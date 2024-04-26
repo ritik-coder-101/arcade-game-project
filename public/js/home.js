@@ -47,7 +47,7 @@ function showSlides1() {
     }
     slideIndex1++;
     if (slideIndex1 > slides1.length) {
-        slideIndex1 = 1;
+        slideIndex1 = 0;
     }
     slides1[slideIndex1 - 1].style.opacity = "1"; // Show the current image
     setTimeout(showSlides1, 10000); // Change image every 10 seconds

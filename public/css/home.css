@@ -1,7 +1,5 @@
 body{
     background-color: white;
-    /* height: 100vh;
-    background: linear-gradient(179deg, rgb(44, 222, 242) 0.00%, rgb(156, 43, 171) 62.53%, rgb(39, 43, 44) 100.00%); */
 }
 *{
     margin: 0;
@@ -208,7 +206,21 @@ body {
     height: 500px;
     background-color: transparent;
     box-shadow: 0 0 0 10px antiquewhite; /* 10px red border */
+    z-index: 1;
 }
+.border .text {
+    position: absolute;
+    top: 125%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: transparent; /* Make text invisible */
+    text-shadow: 0 0 1px rgba(255, 255, 255, 1); /* White shadow with opacity */
+    border: 2px solid #fff;
+    z-index: 99; /* Ensure text is above the background image */
+}
+
+
 .border1 {
     margin: 10px;
     width: 99%;
@@ -264,4 +276,105 @@ hr {
     border: none; /* Remove the default border */
     border-top: 1px solid black; /* Add a new border with 3px width and black color */
 }
+.category-section {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical overflow */
+    white-space: nowrap; /* Prevent wrapping */
+}
 
+.category-section::-webkit-scrollbar {
+    width: 0; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.category-section .column {
+    flex: 1;
+    margin: 10px;
+}
+
+.category-section .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.category-section img {
+    width: 300px;
+    height: 200px;
+    margin-right: 5px;
+    transition: transform 0.3s; /* Add a smooth transition */
+    overflow: hidden;
+}
+
+.row img:hover {
+    transform: scale(1.1); /* Scale the image on hover */
+    transform-origin: center; 
+}
+.category-section span {
+    font-size: 14px;
+}
+
+.category-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.column {
+    flex: 1;
+    margin: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+
+span {
+    font-size: 14px;
+}
+
+.category-section .category {
+    font-size: 36px;
+    color: #666;
+}
+
+.cd {
+    background-color: antiquewhite;
+}
+.row span {
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+}
+.row span#t1 {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+.box1 {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+.image-container1 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.image-container1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.box1:hover .image-container1 {
+    transform: scale(1.1);
+}
