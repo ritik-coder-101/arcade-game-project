@@ -37,7 +37,7 @@ body{
 .navigationbar img[alt="github"] {
     position: absolute;
     top: 12px;
-    left: 1400px;
+    left: 859%;
     transition: filter 0.7s ease;
 }
 .navigationbar img[alt="github"]:hover {
@@ -47,7 +47,7 @@ body{
 .navigationbar img[alt="linkedin"]{
     position: absolute;
     top: 12px;
-    left: 1480px;
+    left: 90%;
     transition: filter 0.7s ease;
 }
 .navigationbar img[alt="linkedin"]:hover{
@@ -85,7 +85,7 @@ body{
 .search-box{
     position: absolute;
     top: 11px;
-    left:1150px;
+    left:70%;
     padding: 5px;
     margin-top: 10px;
     margin-right: 10px;
